@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-import Hello from './Hello';
+import CardList from './CardList';
 import reportWebVitals from './reportWebVitals';
+import {robots} from './robots';
+import 'tachyons';
 
 ReactDOM.render(
-  <Hello greeting ={'Hello ' + 'React Ninja'}/>,
-  document.getElementById('root')
+  <CardList robots={robots} /> 
+  ,document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
